@@ -24,7 +24,7 @@ class StackOverflowSpider(Spider):
             # Extraemos el texto de la pregunta
             texto_pregunta = pregunta.xpath('.//text()').get()
 
-            # Imprimimos en la consola el título de la pregunta y su enlace
+            # Imprimimos en la consola el título de la pregunta
             print(f"Pregunta: {texto_pregunta}")
 
             # Creamos un ítem 'Pregunta' con el texto de la pregunta y su número
